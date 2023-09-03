@@ -30,8 +30,8 @@ function DrawerNav() {
 //tab navigation implementation
 function TabNav() {
   return (
-    <Tab.Navigator initialRouteName="Home">
-      <Tab.Screen name="Home" component={HomeScreen} />
+    <Tab.Navigator initialRouteName="">
+      <Tab.Screen name="Home" component={DrawerNav} />
       <Tab.Screen name="About" component={AboutScreen} />
       <Tab.Screen name="contact" component={ContactScreen} />
     </Tab.Navigator>
@@ -42,17 +42,11 @@ export default function App() {
   return (
 
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Drawer"
-          component={DrawerNav}
-          options={{ headerShown: false }}
-        />
+      <Stack.Navigator initialRouteName="">
         <Stack.Screen name="Tab"
           component={TabNav}
           options={{ headerShown: false }}
         />
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="About" component={AboutScreen} />
       </Stack.Navigator>
     </NavigationContainer>
 
