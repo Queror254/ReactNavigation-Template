@@ -1,5 +1,5 @@
 # ReactNavigation-Template   
-                                                                                                                                           @queror254 
+                                                                    @queror254 
 
    Reference
       go to the links below for more info:
